@@ -22,8 +22,12 @@ mod test {
     use super::*;
 
     #[test]
-    fn test() {
+tests    fn test_find() {
         assert_eq!(find(vec![0, 1, 3, 6, 8, 9, 16], 8), 4);
+    }
+
+    #[test]
+    fn test_not_find() {
         assert_eq!(find(vec![0, 1, 3, 6, 8, 9, 16], 4), -1);
     }
 }
